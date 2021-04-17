@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap {
+    width: 400px;
+    height: 600px;
+    position: relative;
+}
+
+.list {
+    width: 400px;
+    height: 600px;
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s;
+    margin: 0;
+    padding: 0;
+}
+
+.item:nth-child(1) {
+    background-color: rgb(139, 85, 209);
+}
+
+.item:nth-child(2) {
+    background-color: rgb(235, 112, 31);
+}
+
+.item:nth-child(3) {
+    background-color: rgb(20, 218, 20);
+}
+
+.item:nth-child(4) {
+    background-color: rgb(236, 98, 163);
+}
+
+.item:nth-child(5) {
+    background-color: skyblue;
+}
+
+.btn {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    top: 250px;
+    background-color: RGBA(0, 0, 0, 0);
+    z-index: 2;
+    border-width: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+#pre {
+    left: 0;
+}
+
+#next {
+    right: 0;
+}
+
+.item.active {
+    z-index: 1;
+    opacity: 1;
+}
+
+.point-list {
+    padding-left: 0;
+    list-style: none;
+    position: absolute;
+    right: 120px;
+    bottom: 20px;
+    z-index: 3;
+}
+
+.point {
+    width: 9px;
+    height: 9px;
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 100%;
+    border-color: white;
+    float: left;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+.point.active {
+    background-color: black;
+}

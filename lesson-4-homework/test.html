@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.pstatp.com/react/17.0.1/umd/react.production.min.js"></script>
+    <script src="https://unpkg.pstatp.com/react-dom/17.0.1/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.pstatp.com/babel/standalone/7.12.12/babel.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function Slides() { return (
+        <div class="wrap">
+            <ul class="list">
+                <li class="item active">0</li>
+                <li class="item">1</li>
+                <li class="item">2</li>
+                <li class="item">3</li>
+                <li class="item">4</li>
+            </ul>
+            <ul class="point-list">
+                <li class="point active" data-index="0"></li>
+                <li class="point" data-index="1"></li>
+                <li class="point" data-index="2"></li>
+                <li class="point" data-index="3"></li>
+                <li class="point" data-index="4"></li>
+            </ul>
+            <button type="button" class="btn" id="pre">
+              &lt;
+            </button>
+            <button type="button" class="btn" id="next">
+              &gt;
+            </button>
+        </div>
+        ); } ReactDOM.render(
+
+        <Slides />, document.getElementById("root")); var items = document.getElementsByClassName("item"); var points = document.getElementsByClassName("point"); var preBtn = document.getElementById("pre"); var nextBtn = document.getElementById("next"); var index
+        = 0; var clearActive = function () { for (var i = 0; i
+        < items.length; i++) { items[i].className="item" ; } for (var i=0 ; i < points.length; i++) { points[i].className="point" ; } }; var goIndex=function () { clearActive(); items[index].className="item active" ; points[index].className="point active" ; };
+            var goNext=function (){index++; if (index==items.length) { index=0 ; } goIndex(); }; var goPre=function () { index--; if (index==- 1) { index=items.length - 1; } goIndex(); }; nextBtn.addEventListener( "click", function () { time=- 30; goNext();
+            }); preBtn.addEventListener( "click", function () { time=- 30; goPre(); }); for (var i=0 ; i < points.length; i++) { points[i].addEventListener( "click", function () { var idx=this.getAttribute( "data-index"); index=idx; time=- 30; goIndex();
+            }); } var time=0 ; setInterval(function () { time++; if (time==20) { time=0 ; goNext(); }},100); </script>
+</body>
+
+</html>

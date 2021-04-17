@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>      
+</head>
+<body style="min-width: 1200px ;"></body>
+    <style>
+        header {
+          background: black;
+          height: 30px;
+          line-height: 30px;
+          margin-top: -15px;
+        }
+        
+        main{
+            margin-top: 20px;
+            margin-left: 40px;
+            margin-right: 40px;
+            padding-left: 120px;
+            padding-right: 300px;
+            
+        }
+  /* Clear fix    */
+  main::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  main > div {
+
+    
+   
+    background: white;
+    
+    float: left;
+    
+    position: relative;
+    
+  }
+  .center {
+    width: 100%;
+  }
+  .left{
+    width: 120px;
+    margin-left: -100%;
+    right: 120px;
+  }
+  .right {
+    width: 300px;
+    margin-right: -100%;
+    
+  }
+  .center-title{
+      line-height: 20px;
+      font-size: 22px;
+      font-weight: 800;
+      margin: 20px;
+      margin-top: -10px;
+      
+
+  }
+  .img1{
+    width: 45px;
+    height: auto;
+    margin-left: 15px;
+   vertical-align: middle;
+   
+  }
+  .img2{
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+   
+  }
+  .line2{
+    color: grey;
+    margin-top: -10px;
+  }
+  .search_form{
+        width:402px;
+        height:42px;
+        
+    }
+ 
+    /*左边输入框设置样式*/
+    .input_text{
+        width:250px;
+        height: 40px;
+        border:1px  rgb(138, 135, 135);
+        /*清除掉默认的padding*/
+        padding:0px;
+        background: rgb(248, 246, 246);
+        /*提示字首行缩进*/
+        text-indent: 10px;
+ 
+        /*去掉蓝色高亮框*/
+        outline: none;
+ 
+        
+        float:left;
+    }
+ 
+    .input_sub{
+        width:80px;
+        height: 42px;
+        background:rgb(49, 136, 236);
+ 
+        /*去掉submit按钮默认边框*/
+        border:0px;
+       
+        float:left;
+        color:white;/*搜索的字体颜色为白色*/
+        cursor:pointer;/*鼠标变为小手*/
+    }
+
+    hr.new5 {
+      border: 1px solid red;
+      width: 330px;
+}
+
+      </style>
+
+
+      <header style="">
+        <p> 
+            <div  style="color: white;float: left;" > 
+            <a>&nbsp; 下载APP &nbsp;</a><a>注册头条号  &nbsp;</a> <a>北京 霾&nbsp; 8°C / 16°C</a>
+            </div>
+            <div  style="color: white;float: right;" >
+              <a>侵权投诉&nbsp;</a>｜<a>头条产品&nbsp;&nbsp;</a>
+            </div>
+         
+          </p>
+      </header>
+      
+    
+      
+    <main style="border:1px blue;">
+
+        <div class="center">
+            <div class="center-title" >
+                <br>微视频 ｜ 这件事，习近平念兹在兹</br>
+            </div>
+            <p class="line2">
+            <img src="picture/074BD4A4-B0A6-4328-A966-A70517F3E268.png" class="img1">
+            <img src="picture/A74E38BD-A728-4774-91E0-E73118F6A2A9.png" class="img2">
+            <span>央视新闻</span><a> ⋅ </a><a>109评论</a><a> ⋅ </a><a>2小时前</a>
+          </p>
+          <hr>
+          <div class="center-title">
+            
+            <br>第一报道 | 听了总书记的话，未来五年我要这样干</br>
+        </div>
+        <p class="line2">
+        <img src="picture/074BD4A4-B0A6-4328-A966-A70517F3E268.png" class="img1">
+        <img src="picture/4857A84A-C9B9-4C7F-9D16-7C0591D69830.png" class="img2">
+        <span>新华社</span><a> ⋅ </a><a>63评论</a><a> ⋅ </a><a>2小时前</a>
+        </p>
+          <hr>
+
+    <img src="picture/yinghua.jpeg" style="float: left;">
+    <div style="float:left">
+        <div class="center-title" style="margin-top: 30px;">
+            
+            花开了，欢迎你们回来
+        </div>
+        <p class="line2">
+        <img src="picture/8C8CE7F4-E219-475F-B593-9DFBE12053AC.png" class="img1">
+        <img src="picture/0F020A95-2993-4588-B10F-C59B54270B49.png" class="img2">
+        <span>光明网</span><a> ⋅ </a><a>119评论</a><a> ⋅ </a><a>3小时前</a>
+      </p>
+    </div>
+       <hr style="clear: both;margin-top: 150px;">
+      
+       <div class="center-title" >
+        <br>微视频 ｜ 这件事，习近平念兹在兹</br>
+    </div>
+    <p class="line2">
+    <img src="picture/074BD4A4-B0A6-4328-A966-A70517F3E268.png" class="img1">
+    <img src="picture/A74E38BD-A728-4774-91E0-E73118F6A2A9.png" class="img2">
+    <span>央视新闻</span><a> ⋅ </a><a>109评论</a><a> ⋅ </a><a>2小时前</a>
+  </p>
+  <hr>
+  <div class="center-title">
+    
+    <br>第一报道 | 听了总书记的话，未来五年我要这样干</br>
+</div>
+<p class="line2">
+<img src="picture/074BD4A4-B0A6-4328-A966-A70517F3E268.png" class="img1">
+<img src="picture/4857A84A-C9B9-4C7F-9D16-7C0591D69830.png" class="img2">
+<span>新华社</span><a> ⋅ </a><a>63评论</a><a> ⋅ </a><a>2小时前</a>
+</p>
+  <hr>
+
+<img src="picture/yinghua.jpeg" style="float: left;">
+<div style="float:left">
+<div class="center-title" style="margin-top: 30px;">
+    
+    花开了，欢迎你们回来
+</div>
+<p class="line2">
+<img src="picture/8C8CE7F4-E219-475F-B593-9DFBE12053AC.png" class="img1">
+<img src="picture/0F020A95-2993-4588-B10F-C59B54270B49.png" class="img2">
+<span>光明网</span><a> ⋅ </a><a>119评论</a><a> ⋅ </a><a>3小时前</a>
+</p>
+</div>
+<hr style="clear: both;margin-top: 150px;">
+
+
+
+        </div>
+
+
+        <div class="left"> 
+            <img src="picture/toutiao.png" 
+    width=120 style="margin-bottom: 10px;">
+        <div style="line-height: 40px;text-align: center;">推荐</div>
+        <div style="line-height: 40px;text-align: center;">西瓜视频</div>
+        <div style="line-height: 40px;text-align: center;">热点</div>
+        <div style="line-height: 40px;text-align: center;">直播</div>
+        <div style="line-height: 40px;text-align: center;">图片</div>
+        <div style="line-height: 40px;text-align: center;">科技</div>
+        <div style="line-height: 40px;text-align: center;">娱乐</div>
+        <div style="line-height: 40px;text-align: center;">游戏</div>
+        <div style="line-height: 40px;text-align: center;">体育</div>
+        </div>
+
+        <div class="right">
+          
+            <form class="search_form">
+            <input type="text" class="input_text" placeholder="搜索站内资讯、视频或用户"><!-- -->
+            <input type="submit" value="搜索" class="input_sub">
+         
+            </form>
+            <img src="picture/qqWeChat.png" width=330 style="margin-top: 20px;margin-bottom: 10px;">
+            <hr class="new5">
+            
+            <div style="background-color: rgb(248, 245, 245); padding: 20px 0 20px 20px;width: 310px;margin-top: -5px;">
+              <b style="line-height: 20px;font-size: 22px;
+              font-weight: 800;">更多</b>
+            <table cellspacing="10" width="330px" height=auto style="margin-left: -20px;">
+              <tr class="line2">
+                <td>关于头条</td>
+                <td>加入头条</td>
+                <td>媒体报道</td>
+                <td>媒体合作</td>
+              </tr>
+              <tr class="line2">
+                <td>关于头条</td>
+                <td>加入头条</td>
+                <td>媒体报道</td>
+                <td>媒体合作</td>
+              </tr>
+              <tr class="line2">
+                <td>关于头条</td>
+                <td>加入头条</td>
+                <td>媒体报道</td>
+                <td>媒体合作</td>
+              </tr>
+              <tr class="line2">
+                <td>关于头条</td>
+                <td>加入头条</td>
+                <td>媒体报道</td>
+                <td>媒体合作</td>
+              </tr>
+              </table>
+            </div>
+
+            <hr class="new5">
+            
+            <div style="background-color: rgb(248, 245, 245); padding: 20px 0 20px 20px;width: 310px;margin-top: -5px;">
+              <b style="line-height: 20px;font-size: 22px;
+              font-weight: 800;">友情链接</b>
+            <table cellspacing="10" width="330px" height=auto style="margin-left: -20px;">
+              <tr class="line2">
+                <td>关于头条</td>
+                <td>加入头条</td>
+                <td>媒体报道</td>
+                <td>媒体合作</td>
+              </tr>
+              <tr class="line2">
+                <td>关于头条</td>
+                <td>加入头条</td>
+                <td>媒体报道</td>
+                <td>媒体合作</td>
+              </tr>
+              <tr class="line2">
+                <td>关于头条</td>
+                <td>加入头条</td>
+                <td>媒体报道</td>
+                <td>媒体合作</td>
+              </tr>
+              <tr class="line2">
+                <td>关于头条</td>
+                <td>加入头条</td>
+                <td>媒体报道</td>
+                <td>媒体合作</td>
+              </tr>
+              </table>
+            </div>
+
+        </div>
+      </main>
+</body>
+</html>
